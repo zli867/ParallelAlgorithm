@@ -1,0 +1,9 @@
+#PBS -N int_calc                    # name of job
+#PBS -l nodes=1:ppn=16               # resources allocated, 1 node 2 processors
+#PBS -l walltime=00:30:00           # job will run at most 15 min
+#PBS -q coc-ice             # job is submitted to inferno queue
+#PBS -j oe                          # output and error is combined into the same file
+#PBS -o int_calc.out                # output file is named gettingStarted.out
+
+cd /storage/home/hcocice1/zli867/Desktop/CSE6220/pa1
+make exp
